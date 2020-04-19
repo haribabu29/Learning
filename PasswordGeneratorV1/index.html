@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h4 class="h4-pswd">Password Generator</h4>
+        <input type="text" name="password" id="password" placeholder="Password" size="25" class="text-pswd" />
+        <button class="button-clip" id="clipboard">Copy</button>
+        <ul>
+            <li>Password Length <input type="text" name="length" id="length" maxlength="3" size="3" value="20" class="text-pswd-length"/></li>
+            <li>Include upper case <input type="checkbox" id="uppercase" checked align="right"/></li>
+            <li>Include lower case <input type="checkbox" id="lowercase" checked /></li>
+            <li>Include numbers <input type="checkbox" id="numbers" checked /></li>
+            <li>Include symbols <input type="checkbox" id="symbols" checked /></li>
+        </ul>
+        <button id="submit" class="button-pswd-generate">Generate Password</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
